@@ -106,7 +106,7 @@
 &trans   &kp Q        &kp W        &kp E         &kp R            &kp T                                    &kp Y        &kp U            &kp I         &kp O        &kp P           &trans
 &kp TAB  &hml_mo 2 A  &hml LALT S  &hml LSHFT D  &hml_sk LCTRL F  &hml LGUI G                              &hmr RGUI H  &hmr_sk RCTRL J  &hmr RSHFT K  &hmr RALT L  &hmr_mo 2 SEMI  &kp SQT
 &trans   &kp Z        &kp X        &kp C         &kp V            &kp B        &trans           &trans     &kp N        &kp M            &kp COMMA     &kp DOT      &kp FSLH        &trans
-                                   &trans        &trans           &mo 1        &kp BACKSPACE    &kp SPACE  &mo 2        &trans           &trans
+                                   &trans        &trans           &mo 1        &kp BACKSPACE    &kp SPACE  &mo 1        &trans           &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
@@ -125,7 +125,7 @@
 &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1    &bt BT_SEL 2  &bt BT_SEL 3         &bt BT_SEL 4                        &trans          &trans           &trans         &trans           &trans     &trans
 &trans      &trans        &kp PSCRN       &kp UP        &trans               &trans                              &trans          &trans           &kp INSERT     &kp PAUSE_BREAK  &trans     &trans
 &trans      &kp ESC       &hml LALT LEFT  &hml DOWN D   &hml_sk LCTRL RIGHT  &hml LGUI G                         &hmr RGUI HOME  &hmr_sk RCTRL J  &hmr RSHIFT K  &hmr RALT L      &kp ENTER  &trans
-&trans      &kp N1        &kp N2          &kp N3        &kp N4               &kp N5        &trans    &trans      &kp N6          &kp N7           &kp N8         &kp N9           &kp N0     &trans
+&trans      &trans        &trans          &trans        &trans               &trans        &trans    &trans      &trans          &trans           &trans         &trans           &trans     &trans
                                           &trans        &trans               &trans        &trans    &kp DELETE  &trans          &trans           &trans
             >;
 
@@ -143,9 +143,9 @@
             display-name = "Raise";
             bindings = <
 &trans  &trans     &trans        &trans          &trans            &trans                    &trans     &trans            &trans         &trans        &trans    &trans
-&trans  &kp F2     &kp F3        &kp F4          &kp F5            &kp F6                    &kp F7     &kp F8            &kp F9         &kp F10       &kp F10   &trans
+&trans  &kp GRAVE  &trans        &trans          &trans            &trans                    &kp MINUS  &kp EQUAL         &kp LBKT       &kp RBKT      &kp BSLH  &trans
 &kp F1  &kp N1     &hml LALT N2  &hml LSHIFT N3  &hml_sk LCTRL N4  &kp N5                    &kp N6     &hmr_sk RCTRL N7  &hmr RSHFT N8  &hmr RALT N9  &kp N0    &kp F12
-&trans  &kp GRAVE  &trans        &trans          &trans            &trans  &trans    &trans  &kp MINUS  &kp EQUAL         &kp LBKT       &kp RBKT      &kp BSLH  &trans
+&trans  &kp F2     &kp F3        &kp F4          &kp F5            &kp F6  &trans    &trans  &kp F7     &kp F8            &kp F9         &kp F10       &kp F11   &trans
                                  &trans          &trans            &trans  &trans    &trans  &trans     &trans            &trans
             >;
 
