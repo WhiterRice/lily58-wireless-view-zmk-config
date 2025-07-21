@@ -96,10 +96,10 @@
 
             display-name = "Lower";
             bindings = <
-&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1    &bt BT_SEL 2  &bt BT_SEL 3         &bt BT_SEL 4                        &trans          &trans           &trans         &trans           &trans         &trans
-&trans      &kp GRAVE     &kp PSCRN       &kp UP        &trans               &trans                              &trans          &kp EQUAL        &kp INSERT     &kp PAUSE_BREAK  &kp BACKSLASH  &trans
-&trans      &kp ESC       &hml LALT LEFT  &hml DOWN D   &hml_sk LCTRL RIGHT  &hml LGUI G                         &hmr RGUI HOME  &hmr_sk RCTRL J  &hmr RSHIFT K  &hmr RALT L      &kp ENTER      &trans
-&trans      &kp N1        &kp N2          &kp N3        &kp N4               &kp N5        &trans    &trans      &kp N6          &kp N7           &kp N8         &kp N9           &kp N0         &trans
+&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1    &bt BT_SEL 2  &bt BT_SEL 3         &bt BT_SEL 4                        &trans          &trans           &trans         &trans           &trans     &trans
+&trans      &trans        &kp PSCRN       &kp UP        &trans               &trans                              &trans          &trans           &kp INSERT     &kp PAUSE_BREAK  &trans     &trans
+&trans      &kp ESC       &hml LALT LEFT  &hml DOWN D   &hml_sk LCTRL RIGHT  &hml LGUI G                         &hmr RGUI HOME  &hmr_sk RCTRL J  &hmr RSHIFT K  &hmr RALT L      &kp ENTER  &trans
+&trans      &kp N1        &kp N2          &kp N3        &kp N4               &kp N5        &trans    &trans      &kp N6          &kp N7           &kp N8         &kp N9           &kp N0     &trans
                                           &trans        &trans               &trans        &trans    &kp DELETE  &trans          &trans           &trans
             >;
 
