@@ -96,11 +96,11 @@
 
             display-name = "Lower";
             bindings = <
-&bt BT_CLR  &bt BT_SEL 0     &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                        &trans          &trans     &trans      &trans           &trans             &trans
-&trans      &kp GRAVE        &trans        &kp UP        &kp LBKT      &kp RBKT                            &kp MINUS       &kp EQUAL  &kp INSERT  &kp PRINTSCREEN  &kp BACKSLASH      &trans
-&trans      &hml LSHIFT ESC  &kp LEFT      &kp DOWN      &kp RIGHT     &hml LGUI G                         &hmr RGUI HOME  &kp PG_DN  &kp PG_UP   &kp END          &hmr RSHIFT ENTER  &trans
-&trans      &kp N1           &kp N2        &kp N3        &kp N4        &kp N5        &trans    &trans      &kp N6          &kp N7     &kp N8      &kp N9           &kp N0             &trans
-                                           &trans        &trans        &trans        &trans    &kp DELETE  &trans          &trans     &trans
+&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2   &bt BT_SEL 3     &bt BT_SEL 4                        &trans          &trans           &trans         &trans           &trans         &trans
+&trans      &kp GRAVE     &trans        &kp UP         &kp LBKT         &kp RBKT                            &kp MINUS       &kp EQUAL        &kp INSERT     &kp PRINTSCREEN  &kp BACKSLASH  &trans
+&trans      &kp ESC       &hml LALT S   &hml LSHIFT D  &hml_sk LCTRL F  &hml LGUI G                         &hmr RGUI HOME  &hmr_sk RCTRL J  &hmr RSHIFT K  &hmr RALT L      &kp ENTER      &trans
+&trans      &kp N1        &kp N2        &kp N3         &kp N4           &kp N5        &trans    &trans      &kp N6          &kp N7           &kp N8         &kp N9           &kp N0         &trans
+                                        &trans         &trans           &trans        &trans    &kp DELETE  &trans          &trans           &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
@@ -116,11 +116,11 @@
 
             display-name = "Raise";
             bindings = <
-&trans  &trans             &trans   &trans   &trans   &trans                    &trans  &trans  &trans  &trans  &trans        &trans
-&trans  &kp F1             &kp F2   &kp F3   &kp F4   &trans                    &trans  &trans  &trans  &trans  &trans        &trans
-&trans  &hml_sk LSHIFT F5  &kp F6   &kp F7   &kp F8   &trans                    &trans  &trans  &trans  &trans  &trans        &trans
-&trans  &kp F9             &kp F10  &kp F11  &kp F12  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &kp KP_ENTER  &trans
-                                    &trans   &trans   &trans  &trans    &trans  &trans  &trans  &trans
+&trans  &trans  &trans          &trans             &trans            &trans                    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp F1  &kp F2          &kp F3             &kp F4            &trans                    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp F5  &hml_sk LALT S  &hml_sk LSHIFT F7  &hml_sk LCTRL F8  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp F9  &kp F10         &kp F11            &kp F12           &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+                                &trans             &trans            &trans  &trans    &trans  &trans  &trans  &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
