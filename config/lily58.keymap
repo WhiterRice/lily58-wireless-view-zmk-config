@@ -64,7 +64,7 @@
 
         hml_mo: home_row_mo_left {
             compatible = "zmk,behavior-hold-tap";
-            bindings = <&mo>, <&kp>;
+            bindings = <&sk>, <&kp>;
 
             #binding-cells = <2>;
             tapping-term-ms = <135>;
@@ -77,7 +77,7 @@
 
         hmr_mo: home_row_mo_right {
             compatible = "zmk,behavior-hold-tap";
-            bindings = <&mo>, <&kp>;
+            bindings = <&sk>, <&kp>;
 
             #binding-cells = <2>;
             tapping-term-ms = <135>;
@@ -86,6 +86,15 @@
             flavor = "balanced";
             hold-trigger-on-release;
             hold-trigger-key-positions = <0 1 2 3 4 5 12 13 14 15 16 17 24 25 26 27 28 29 36 37 38 39 40 41 42 50 51 52 53>;
+        };
+    };
+
+    combos {
+        compatible = "zmk,combos";
+
+        caps_word {
+            bindings = <&caps_word>;
+            key-positions = <27 32>;
         };
     };
 
@@ -102,11 +111,11 @@
 
             display-name = "Base";
             bindings = <
-&trans   &trans       &trans       &trans        &trans           &trans                                   &trans       &trans           &trans        &trans       &trans          &trans
-&trans   &kp Q        &kp W        &kp E         &kp R            &kp T                                    &kp Y        &kp U            &kp I         &kp O        &kp P           &trans
-&kp TAB  &hml_mo 2 A  &hml LALT S  &hml LSHFT D  &hml_sk LCTRL F  &hml LGUI G                              &hmr RGUI H  &hmr_sk RCTRL J  &hmr RSHFT K  &hmr RALT L  &hmr_mo 2 SEMI  &kp SQT
-&trans   &kp Z        &kp X        &kp C         &kp V            &kp B        &trans           &trans     &kp N        &kp M            &kp COMMA     &kp DOT      &kp FSLH        &trans
-                                   &trans        &trans           &mo 1        &kp BACKSPACE    &kp SPACE  &mo 1        &trans           &trans
+&trans   &trans          &trans       &trans        &trans           &trans                                   &trans       &trans           &trans        &trans       &trans             &trans
+&trans   &kp Q           &kp W        &kp E         &kp R            &kp T                                    &kp Y        &kp U            &kp I         &kp O        &kp P              &trans
+&kp TAB  &hml_mo LALT A  &hml LALT S  &hml LSHFT D  &hml_sk LCTRL F  &hml LGUI G                              &hmr RGUI H  &hmr_sk RCTRL J  &hmr RSHFT K  &hmr RALT L  &hmr_mo RALT SEMI  &kp SQT
+&trans   &kp Z           &kp X        &kp C         &kp V            &kp B        &trans           &trans     &kp N        &kp M            &kp COMMA     &kp DOT      &kp FSLH           &trans
+                                      &trans        &trans           &mo 1        &kp BACKSPACE    &kp SPACE  &mo 1        &trans           &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
@@ -122,11 +131,11 @@
 
             display-name = "Lower";
             bindings = <
-&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1    &bt BT_SEL 2     &bt BT_SEL 3         &bt BT_SEL 4                        &trans          &trans           &trans         &trans           &trans     &trans
-&trans      &trans        &kp PSCRN       &kp UP           &trans               &trans                              &trans          &trans           &kp INSERT     &kp PAUSE_BREAK  &trans     &trans
-&trans      &kp ESC       &hml LALT LEFT  &hml LSHFT DOWN  &hml_sk LCTRL RIGHT  &hml LGUI G                         &hmr RGUI HOME  &hmr_sk RCTRL J  &hmr RSHIFT K  &hmr RALT L      &kp ENTER  &trans
-&trans      &trans        &trans          &trans           &trans               &trans        &trans    &trans      &trans          &trans           &trans         &trans           &trans     &trans
-                                          &trans           &trans               &trans        &trans    &kp DELETE  &trans          &trans           &trans
+&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1    &bt BT_SEL 2     &bt BT_SEL 3         &bt BT_SEL 4                        &trans          &trans               &trans             &trans           &trans     &trans
+&trans      &trans        &kp PSCRN       &kp UP           &trans               &trans                              &trans          &trans               &kp INSERT         &kp PAUSE_BREAK  &trans     &trans
+&trans      &kp ESC       &hml LALT LEFT  &hml LSHFT DOWN  &hml_sk LCTRL RIGHT  &hml LGUI G                         &hmr RGUI HOME  &hmr_sk RCTRL PG_DN  &hmr RSHIFT PG_UP  &hmr RALT END    &kp ENTER  &trans
+&trans      &trans        &trans          &trans           &trans               &trans        &trans    &trans      &trans          &trans               &trans             &trans           &trans     &trans
+                                          &trans           &trans               &trans        &trans    &kp DELETE  &trans          &trans               &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
