@@ -76,11 +76,11 @@
 
             display-name = "Base";
             bindings = <
-&kp GRAVE          &kp N1         &kp N2  &kp N3  &kp N4  &kp N5                                   &kp N6       &kp N7  &kp N8     &kp N9   &kp N0            &kp MINUS
-&kp RBKT           &kp Q          &kp W   &kp E   &kp R   &kp T                                    &kp Y        &kp U   &kp I      &kp O    &kp P             &kp LBKT
-&hml_sk LCTRL SQT  &hml LSHIFT A  &kp S   &kp D   &kp F   &hml LGUI G                              &hmr RGUI H  &kp J   &kp K      &kp L    &hmr RSHIFT SEMI  &hmr_sk RCTRL SQT
-&kp LALT           &kp Z          &kp X   &kp C   &kp V   &kp B        &trans           &trans     &kp N        &kp M   &kp COMMA  &kp DOT  &kp FSLH          &kp RIGHT_ALT
-                                          &trans  &tog 2  &mo 1        &kp BACKSPACE    &kp SPACE  &mo 1        &trans  &trans
+&trans   &trans  &trans       &trans        &trans           &trans                                   &trans       &trans           &trans        &trans       &trans    &trans
+&trans   &kp Q   &kp W        &kp E         &kp R            &kp T                                    &kp Y        &kp U            &kp I         &kp O        &kp P     &trans
+&kp TAB  &kp A   &hml LALT S  &hml LSHFT D  &hml_sk LCTRL F  &hml LGUI G                              &hmr RGUI H  &hmr_sk RCTRL J  &hmr RSHFT K  &hmr RALT L  &kp SEMI  &kp SQT
+&trans   &kp Z   &kp X        &kp C         &kp V            &kp B        &trans           &trans     &kp N        &kp M            &kp COMMA     &kp DOT      &kp FSLH  &trans
+                              &trans        &trans           &mo 1        &kp BACKSPACE    &kp SPACE  &mo 2        &trans           &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
@@ -97,7 +97,7 @@
             display-name = "Lower";
             bindings = <
 &bt BT_CLR  &bt BT_SEL 0     &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                        &trans          &trans     &trans      &trans           &trans             &trans
-&trans      &kp GRAVE        &kp TAB       &kp UP        &kp LBKT      &kp RBKT                            &kp MINUS       &kp EQUAL  &kp INSERT  &kp PRINTSCREEN  &kp BACKSLASH      &trans
+&trans      &kp GRAVE        &trans        &kp UP        &kp LBKT      &kp RBKT                            &kp MINUS       &kp EQUAL  &kp INSERT  &kp PRINTSCREEN  &kp BACKSLASH      &trans
 &trans      &hml LSHIFT ESC  &kp LEFT      &kp DOWN      &kp RIGHT     &hml LGUI G                         &hmr RGUI HOME  &kp PG_DN  &kp PG_UP   &kp END          &hmr RSHIFT ENTER  &trans
 &trans      &kp N1           &kp N2        &kp N3        &kp N4        &kp N5        &trans    &trans      &kp N6          &kp N7     &kp N8      &kp N9           &kp N0             &trans
                                            &trans        &trans        &trans        &trans    &kp DELETE  &trans          &trans     &trans
