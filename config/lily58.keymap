@@ -15,7 +15,7 @@
             bindings = <&kp>, <&kp>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <125>;
+            tapping-term-ms = <135>;
             quick-tap-ms = <175>;
             require-prior-idle-ms = <75>;
             flavor = "balanced";
@@ -28,7 +28,33 @@
             bindings = <&kp>, <&kp>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <125>;
+            tapping-term-ms = <135>;
+            quick-tap-ms = <175>;
+            require-prior-idle-ms = <75>;
+            flavor = "balanced";
+            hold-trigger-key-positions = <0 1 2 3 4 5 12 13 14 15 16 17 24 25 26 27 28 29 36 37 38 39 40 41 42 50 51 52 53>;
+            hold-trigger-on-release;
+        };
+
+        hml_sk: home_row_mod_left_sk {
+            compatible = "zmk,behavior-hold-tap";
+            bindings = <&kp>, <&sk>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <135>;
+            quick-tap-ms = <175>;
+            require-prior-idle-ms = <75>;
+            flavor = "balanced";
+            hold-trigger-key-positions = <6 7 8 9 10 11 18 19 20 21 22 23 30 31 32 33 34 35 43 44 45 46 47 48 49 54 55 56 57>;
+            hold-trigger-on-release;
+        };
+
+        hmr_sk: home_row_mod_right_sk {
+            compatible = "zmk,behavior-hold-tap";
+            bindings = <&kp>, <&sk>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <135>;
             quick-tap-ms = <175>;
             require-prior-idle-ms = <75>;
             flavor = "balanced";
@@ -50,11 +76,11 @@
 
             display-name = "Base";
             bindings = <
-&kp GRAVE             &kp N1         &kp N2  &kp N3  &kp N4  &kp N5                                   &kp N6       &kp N7  &kp N8     &kp N9   &kp N0            &kp MINUS
-&kp RBKT              &kp Q          &kp W   &kp E   &kp R   &kp T                                    &kp Y        &kp U   &kp I      &kp O    &kp P             &kp LBKT
-&hml LCTRL BACKSLASH  &hml LSHIFT A  &kp S   &kp D   &kp F   &hml LGUI G                              &hmr RGUI H  &kp J   &kp K      &kp L    &hmr RSHIFT SEMI  &hmr RCTRL SQT
-&kp LALT              &kp Z          &kp X   &kp C   &kp V   &kp B        &trans           &trans     &kp N        &kp M   &kp COMMA  &kp DOT  &kp FSLH          &kp RIGHT_ALT
-                                             &trans  &trans  &mo 1        &kp BACKSPACE    &kp SPACE  &mo 1        &trans  &trans
+&kp GRAVE                &kp N1         &kp N2  &kp N3  &kp N4  &kp N5                                   &kp N6       &kp N7  &kp N8     &kp N9   &kp N0            &kp MINUS
+&kp RBKT                 &kp Q          &kp W   &kp E   &kp R   &kp T                                    &kp Y        &kp U   &kp I      &kp O    &kp P             &kp LBKT
+&hml_sk LCTRL BACKSLASH  &hml LSHIFT A  &kp S   &kp D   &kp F   &hml LGUI G                              &hmr RGUI H  &kp J   &kp K      &kp L    &hmr RSHIFT SEMI  &hmr_sk RCTRL SQT
+&kp LALT                 &kp Z          &kp X   &kp C   &kp V   &kp B        &trans           &trans     &kp N        &kp M   &kp COMMA  &kp DOT  &kp FSLH          &kp RIGHT_ALT
+                                                &trans  &trans  &mo 1        &kp BACKSPACE    &kp SPACE  &mo 1        &trans  &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
