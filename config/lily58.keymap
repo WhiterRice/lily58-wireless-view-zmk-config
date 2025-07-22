@@ -108,6 +108,11 @@
             bindings = <&alts_word>;
             key-positions = <37 48>;
         };
+
+        numfn {
+            bindings = <&mo 2>;
+            key-positions = <52 55>;
+        };
     };
 
     keymap {
