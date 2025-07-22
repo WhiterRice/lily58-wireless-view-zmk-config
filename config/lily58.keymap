@@ -87,6 +87,13 @@
             hold-trigger-on-release;
             hold-trigger-key-positions = <0 1 2 3 4 5 12 13 14 15 16 17 24 25 26 27 28 29 36 37 38 39 40 41 42 50 51 52 53>;
         };
+
+        alts_word: alts_word {
+            compatible = "zmk,behavior-caps-word";
+            #binding-cells = <0>;
+            continue-list = <A B C D E F G H I J K L M N O P Q R S T U V W X Y Z>;
+            mods = <(MOD_LALT)>;
+        };
     };
 
     combos {
@@ -95,6 +102,11 @@
         caps_word {
             bindings = <&caps_word>;
             key-positions = <25 34>;
+        };
+
+        alts_word {
+            bindings = <&alts_word>;
+            key-positions = <37 48>;
         };
     };
 
