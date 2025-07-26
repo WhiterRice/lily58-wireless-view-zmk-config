@@ -97,11 +97,11 @@
 
         mml: mod_morph_layer {
             compatible = "zmk,behavior-mod-morph";
-            bindings = <&kp A>, <&kp A>;
+            bindings = <&kp A>, <&kp B>;
 
             #binding-cells = <0>;
             mods = <(MOD_LCTL|MOD_LSFT|MOD_LALT|MOD_LGUI|MOD_RCTL|MOD_RSFT|MOD_RALT|MOD_RGUI)>;
-            keep-mods = <(MOD_LSFT|MOD_LCTL|MOD_LALT|MOD_LGUI|MOD_RCTL|MOD_RSFT|MOD_RALT|MOD_RGUI)>;
+            keep-mods = <(MOD_LSFT|MOD_LCTL|MOD_LGUI|MOD_RCTL|MOD_RSFT|MOD_RALT|MOD_RGUI)>;
         };
 
         nw: nums_word {
