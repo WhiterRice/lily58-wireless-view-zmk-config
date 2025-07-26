@@ -103,6 +103,12 @@
             mods = <(MOD_LCTL|MOD_LSFT|MOD_LALT|MOD_LGUI|MOD_RCTL|MOD_RSFT|MOD_RALT|MOD_RGUI)>;
             keep-mods = <(MOD_LSFT|MOD_LCTL|MOD_LALT|MOD_LGUI|MOD_RCTL|MOD_RSFT|MOD_RALT|MOD_RGUI)>;
         };
+
+        nw: nums_word {
+            compatible = "zmk,behavior-caps-word";
+            #binding-cells = <0>;
+            continue-list = <NUMBER_1 NUMBER_2 NUMBER_3 NUMBER_4 NUMBER_5 NUMBER_6 NUMBER_7 NUMBER_8 NUMBER_9 NUMBER_0>;
+        };
     };
 
     combos {
@@ -116,6 +122,11 @@
         alts_word {
             bindings = <&aw>;
             key-positions = <50 57>;
+        };
+
+        nums_word {
+            bindings = <&nw>;
+            key-positions = <53 54>;
         };
     };
 
