@@ -103,7 +103,7 @@
 
         skqr: sticky_key_quick {
             compatible = "zmk,behavior-sticky-key";
-            bindings = <&sk>;
+            bindings = <&kp>;
             #binding-cells = <1>;
             quick-release;
             lazy;
