@@ -36,9 +36,9 @@
             hold-trigger-on-release;
         };
 
-        hml_sk: home_row_mod_left_sk {
+        hml_skqr: home_row_mod_left_sk {
             compatible = "zmk,behavior-hold-tap";
-            bindings = <&sk>, <&kp>;
+            bindings = <&skqr>, <&kp>;
 
             #binding-cells = <2>;
             tapping-term-ms = <140>;
@@ -49,9 +49,9 @@
             hold-trigger-on-release;
         };
 
-        hmr_sk: home_row_mod_right_sk {
+        hmr_skqr: home_row_mod_right_sk {
             compatible = "zmk,behavior-hold-tap";
-            bindings = <&sk>, <&kp>;
+            bindings = <&skqr>, <&kp>;
 
             #binding-cells = <2>;
             tapping-term-ms = <140>;
@@ -95,19 +95,19 @@
             mods = <(MOD_LALT)>;
         };
 
-        mml: mod_morph_layer {
-            compatible = "zmk,behavior-mod-morph";
-            bindings = <&kp A>, <&mo 2>;
-
-            #binding-cells = <0>;
-            mods = <(MOD_LCTL|MOD_LSFT|MOD_LALT|MOD_LGUI|MOD_RCTL|MOD_RSFT|MOD_RALT|MOD_RGUI)>;
-            keep-mods = <(MOD_LSFT|MOD_LCTL|MOD_LGUI|MOD_RCTL|MOD_RALT|MOD_RGUI|MOD_LALT|MOD_RSFT)>;
-        };
-
         nw: nums_word {
             compatible = "zmk,behavior-caps-word";
             #binding-cells = <0>;
             continue-list = <NUMBER_1 NUMBER_2 NUMBER_3 NUMBER_4 NUMBER_5 NUMBER_6 NUMBER_7 NUMBER_8 NUMBER_9 NUMBER_0>;
+        };
+
+        skqr: sticky_key_quick {
+            compatible = "zmk,behavior-sticky-key";
+            bindings = <&sk>;
+            #binding-cells = <1>;
+            quick-release;
+            lazy;
+            release-after-ms = <500>;
         };
     };
 
@@ -143,11 +143,11 @@
 
             display-name = "Base";
             bindings = <
-&trans            &trans        &trans  &trans  &trans    &trans                                   &trans  &trans    &trans     &trans   &trans           &trans
-&trans            &kp Q         &kp W   &kp E   &kp R     &kp T                                    &kp Y   &kp U     &kp I      &kp O    &kp P            &trans
-&hml LCTRL GRAVE  &hml LSHFT A  &kp S   &kp D   &kp F     &hml LGUI G                              &kp H   &kp J     &kp K      &kp L    &hmr RSHFT SEMI  &hmr RCTRL SQT
-&trans            &kp Z         &kp X   &kp C   &kp V     &kp B        &trans           &trans     &kp N   &kp M     &kp COMMA  &kp DOT  &kp FSLH         &trans
-                                        &trans  &kp LALT  &mo 1        &kp BACKSPACE    &kp SPACE  &mo 2   &kp RALT  &trans
+&trans            &trans             &trans  &trans  &trans    &trans                                   &trans  &trans    &trans     &trans   &trans                &trans
+&trans            &kp Q              &kp W   &kp E   &kp R     &kp T                                    &kp Y   &kp U     &kp I      &kp O    &kp P                 &trans
+&hml LCTRL GRAVE  &hml_skqr LSHFT A  &kp S   &kp D   &kp F     &hml LGUI G                              &kp H   &kp J     &kp K      &kp L    &hmr_skqr RSHFT SEMI  &hmr RCTRL SQT
+&trans            &kp Z              &kp X   &kp C   &kp V     &kp B        &trans           &trans     &kp N   &kp M     &kp COMMA  &kp DOT  &kp FSLH              &trans
+                                             &trans  &kp LALT  &mo 1        &kp BACKSPACE    &kp SPACE  &mo 2   &kp RALT  &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
@@ -163,11 +163,11 @@
 
             display-name = "Lower";
             bindings = <
-&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2    &bt BT_SEL 3     &bt BT_SEL 4                           &trans        &trans     &trans      &trans    &trans     &trans
-&trans      &trans        &kp TAB       &kp UP_ARROW    &kp PRINTSCREEN  &kp AMPS                               &kp ASTERISK  &kp MINUS  &kp EQUAL   &kp LBKT  &kp RBKT   &trans
-&trans      &kp ESC       &kp LEFT      &kp DOWN        &kp RIGHT        &kp PAUSE_BREAK                        &kp HOME      &kp PG_DN  &kp PG_UP   &kp END   &kp ENTER  &kp BACKSLASH
-&trans      &trans        &trans        &kp SCROLLLOCK  &trans           &bootloader      &trans    &trans      &bootloader   &trans     &kp INSERT  &trans    &trans     &trans
-                                        &trans          &trans           &trans           &trans    &kp DELETE  &trans        &trans     &trans
+&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3     &bt BT_SEL 4                           &trans        &trans     &trans      &trans    &trans     &trans
+&trans      &trans        &kp TAB       &kp UP_ARROW  &kp PRINTSCREEN  &kp SCROLLLOCK                         &kp ASTERISK  &kp MINUS  &kp EQUAL   &kp LBKT  &kp RBKT   &trans
+&trans      &kp ESC       &kp LEFT      &kp DOWN      &kp RIGHT        &kp PAUSE_BREAK                        &kp HOME      &kp PG_DN  &kp PG_UP   &kp END   &kp ENTER  &kp BACKSLASH
+&trans      &trans        &trans        &trans        &trans           &bootloader      &trans    &trans      &bootloader   &trans     &kp INSERT  &trans    &trans     &trans
+                                        &trans        &trans           &trans           &trans    &kp DELETE  &trans        &trans     &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
@@ -183,11 +183,11 @@
 
             display-name = "Raise";
             bindings = <
-&trans  &trans    &trans  &trans  &trans  &trans                     &trans  &trans  &trans  &trans  &trans      &trans
-&trans  &kp EXCL  &kp F7  &kp F8  &kp F9  &kp F10                    &trans  &kp N7  &kp N8  &kp N9  &kp N0      &trans
-&trans  &kp AT    &kp F4  &kp F5  &kp F6  &kp F11                    &trans  &kp N4  &kp N5  &kp N6  &trans      &trans
-&trans  &kp HASH  &kp F1  &kp F2  &kp F3  &kp F12  &trans    &trans  &trans  &kp N1  &kp N2  &kp N3  &kp KP_DOT  &trans
-                          &trans  &trans  &trans   &trans    &trans  &trans  &trans  &trans
+&trans  &trans    &trans  &trans    &trans      &trans                         &trans     &trans    &trans     &trans    &trans    &trans
+&trans  &kp F2    &kp F3  &kp F4    &kp F5      &kp F6                         &kp F7     &kp F8    &kp F9     &kp F10   &kp F11   &trans
+&kp F1  &kp N1    &kp N2  &kp N3    &kp N4      &kp N5                         &kp N6     &kp N7    &kp N8     &kp N9    &kp N0    &kp F12
+&trans  &kp EXCL  &kp AT  &kp HASH  &kp DOLLAR  &kp PERCENT  &trans    &trans  &kp CARET  &kp AMPS  &kp ASTRK  &kp LPAR  &kp RPAR  &trans
+                          &trans    &trans      &trans       &trans    &trans  &trans     &trans    &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
