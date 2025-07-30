@@ -123,11 +123,6 @@
             bindings = <&aw>;
             key-positions = <50 57>;
         };
-
-        nums_word {
-            bindings = <&nw>;
-            key-positions = <53 54>;
-        };
     };
 
     keymap {
