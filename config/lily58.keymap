@@ -151,11 +151,11 @@
 
             display-name = "Base";
             bindings = <
-&trans         &trans  &trans  &trans  &trans    &trans                                               &trans  &trans    &trans     &trans   &trans     &trans
-&trans         &kp Q   &kp W   &kp E   &kp R     &kp T                                                &kp Y   &kp U     &kp I      &kp O    &kp P      &trans
-&hml_mo 1 TAB  &kp A   &kp S   &kp D   &kp F     &hml LGUI G                                          &kp H   &kp J     &kp K      &kp L    &kp SEMI   &hmr_sl 2 SQT
-&trans         &kp Z   &kp X   &kp C   &kp V     &kp B        &trans             &trans               &kp N   &kp M     &kp COMMA  &kp DOT  &kp SLASH  &trans
-                               &trans  &kp LALT  &kp LCTRL    &hml LSHFT BSPC    &hmr_sl RSHFT SPACE  &mo 2   &kp RALT  &trans
+&trans         &trans  &trans  &trans  &trans    &trans                                            &trans  &trans    &trans     &trans   &trans     &trans
+&trans         &kp Q   &kp W   &kp E   &kp R     &kp T                                             &kp Y   &kp U     &kp I      &kp O    &kp P      &trans
+&hml_mo 1 TAB  &kp A   &kp S   &kp D   &kp F     &hml LGUI G                                       &kp H   &kp J     &kp K      &kp L    &kp SEMI   &hmr_sl 1 SQT
+&trans         &kp Z   &kp X   &kp C   &kp V     &kp B        &trans             &trans            &kp N   &kp M     &kp COMMA  &kp DOT  &kp SLASH  &trans
+                               &trans  &kp LALT  &kp LCTRL    &hml LSHFT BSPC    &hmr RSHFT SPACE  &mo 2   &kp RALT  &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
