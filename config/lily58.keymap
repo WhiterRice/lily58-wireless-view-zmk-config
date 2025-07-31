@@ -175,7 +175,7 @@
 &trans      &trans        &kp ESCAPE    &kp UP_ARROW  &kp PSCRN     &kp SCROLLLOCK                          &kp GRAVE    &kp MINUS  &kp EQUAL  &kp LBKT  &kp RBKT  &trans
 &trans      &trans        &kp LEFT      &kp DOWN      &kp RIGHT     &kp PAUSE_BREAK                         &kp HOME     &kp PG_DN  &kp PG_UP  &kp END   &kp INS   &kp BACKSLASH
 &trans      &trans        &trans        &trans        &trans        &bootloader      &trans         &trans  &bootloader  &trans     &trans     &trans    &trans    &trans
-                                        &trans        &kp LC(LALT)  &kp LC(BSPC)     &kp LC(RET)    &trans  &trans       &trans     &trans
+                                        &trans        &kp LC(LALT)  &kp LC(BSPC)     &kp LS(RET)    &trans  &trans       &trans     &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
