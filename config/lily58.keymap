@@ -151,11 +151,11 @@
 
             display-name = "Base";
             bindings = <
-&trans     &trans  &trans  &trans  &trans    &trans                                         &trans      &trans        &trans     &trans   &trans     &trans
-&trans     &kp Q   &kp W   &kp E   &kp R     &kp T                                          &kp Y       &kp U         &kp I      &kp O    &kp P      &trans
-&lt 1 TAB  &kp A   &kp S   &kp D   &kp F     &kp G                                          &kp H       &kp J         &kp K      &kp L    &kp SEMI   &kp SQT
-&trans     &kp Z   &kp X   &kp C   &kp V     &kp B      &trans            &trans            &kp N       &kp M         &kp COMMA  &kp DOT  &kp SLASH  &trans
-                           &trans  &kp LALT  &kp LCTRL  &hml LSHFT RET    &hmr RSHFT SPACE  &lt 2 BSPC  &mt LGUI DEL  &trans
+&trans     &trans  &trans  &trans  &trans    &trans                                              &trans     &trans    &trans     &trans   &trans     &trans
+&trans     &kp Q   &kp W   &kp E   &kp R     &kp T                                               &kp Y      &kp U     &kp I      &kp O    &kp P      &trans
+&lt 1 TAB  &kp A   &kp S   &kp D   &kp F     &kp G                                               &kp H      &kp J     &kp K      &kp L    &kp SEMI   &kp SQT
+&trans     &kp Z   &kp X   &kp C   &kp V     &kp B           &trans            &trans            &kp N      &kp M     &kp COMMA  &kp DOT  &kp SLASH  &trans
+                           &trans  &kp LALT  &mt LCTRL BSPC  &hml LSHFT RET    &hmr RSHFT SPACE  &lt 2 DEL  &kp RGUI  &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
@@ -171,11 +171,11 @@
 
             display-name = "Lower";
             bindings = <
-&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                                        &trans       &trans     &trans     &trans    &trans    &trans
-&trans      &trans        &kp ESCAPE    &kp UP_ARROW  &kp PSCRN     &kp SCROLLLOCK                                      &kp GRAVE    &kp MINUS  &kp EQUAL  &kp LBKT  &kp RBKT  &trans
-&trans      &trans        &kp LEFT      &kp DOWN      &kp RIGHT     &kp PAUSE_BREAK                                     &kp HOME     &kp PG_DN  &kp PG_UP  &kp END   &kp INS   &kp BACKSLASH
-&trans      &trans        &trans        &trans        &trans        &bootloader      &trans                     &trans  &bootloader  &trans     &trans     &trans    &trans    &trans
-                                        &trans        &trans        &trans           &hml LC(LSHFT) LC(BSPC)    &trans  &trans       &trans     &trans
+&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                            &trans       &trans     &trans     &trans    &trans    &trans
+&trans      &trans        &kp ESCAPE    &kp UP_ARROW  &kp PSCRN     &kp SCROLLLOCK                          &kp GRAVE    &kp MINUS  &kp EQUAL  &kp LBKT  &kp RBKT  &trans
+&trans      &trans        &kp LEFT      &kp DOWN      &kp RIGHT     &kp PAUSE_BREAK                         &kp HOME     &kp PG_DN  &kp PG_UP  &kp END   &kp INS   &kp BACKSLASH
+&trans      &trans        &trans        &trans        &trans        &bootloader      &trans         &trans  &bootloader  &trans     &trans     &trans    &trans    &trans
+                                        &trans        &kp LC(LALT)  &kp LC(BSPC)     &kp LC(RET)    &trans  &trans       &trans     &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
