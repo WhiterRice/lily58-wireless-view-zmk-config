@@ -173,8 +173,8 @@
             display-name = "Lower";
             bindings = <
 &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                            &trans     &trans     &trans     &trans    &trans    &trans
-&trans      &kp F12       &kp TAB       &kp UP_ARROW  &kp PSCRN     &kp SCROLLLOCK                          &kp GRAVE  &kp MINUS  &kp EQUAL  &kp LBKT  &kp RBKT  &trans
-&trans      &kp ESC       &kp LEFT      &kp DOWN      &kp RIGHT     &kp PAUSE_BREAK                         &kp HOME   &kp PG_DN  &kp PG_UP  &kp END   &kp INS   &kp BACKSLASH
+&trans      &kp HOME      &kp PG_UP     &kp UP_ARROW  &kp PG_DN     &kp END                                 &kp GRAVE  &kp MINUS  &kp EQUAL  &kp LBKT  &kp RBKT  &trans
+&kp F12     &kp ESC       &kp LEFT      &kp DOWN      &kp RIGHT     &kp PAUSE_BREAK                         &kp MINUS  &kp EQUAL  &kp LBKT   &kp RBKT  &kp BSLH  &kp F11
 &trans      &kp F1        &kp F2        &kp F3        &kp F4        &kp F5           &trans         &trans  &kp F6     &kp F7     &kp F8     &kp F9    &kp F10   &trans
                                         &trans        &kp LGUI      &kp LC(BSPC)     &kp LS(RET)    &trans  &trans     &trans     &trans
             >;
@@ -192,11 +192,11 @@
 
             display-name = "Raise";
             bindings = <
-&trans  &trans    &trans  &trans    &trans      &trans                         &trans     &trans    &trans     &trans    &trans    &trans
-&trans  &kp EXCL  &kp AT  &kp HASH  &kp DOLLAR  &kp PERCENT                    &kp CARET  &kp AMPS  &kp ASTRK  &kp LPAR  &kp RPAR  &trans
-&trans  &kp N1    &kp N2  &kp N3    &kp N4      &kp N5                         &kp N6     &kp N7    &kp N8     &kp N9    &kp N0    &trans
-&trans  &trans    &trans  &trans    &trans      &trans       &trans    &trans  &trans     &trans    &trans     &trans    &trans    &trans
-                          &trans    &trans      &trans       &trans    &trans  &trans     &trans    &trans
+&trans  &trans    &trans          &trans        &trans          &trans                         &trans        &trans       &trans        &trans      &trans        &trans
+&trans  &kp EXCL  &kp AT          &kp HASH      &kp DOLLAR      &kp PERCENT                    &kp CARET     &kp AMPS     &kp ASTRK     &kp LPAR    &kp RPAR      &trans
+&trans  &kp N1    &kp N2          &kp N3        &kp N4          &kp N5                         &kp N6        &kp N7       &kp N8        &kp N9      &kp N0        &trans
+&trans  &trans    &kp SCROLLLOCK  &kp CAPSLOCK  &kp KP_NUMLOCK  &trans       &trans    &trans  &kp KP_MINUS  &kp KP_PLUS  &kp KP_COMMA  &kp KP_DOT  &kp KP_SLASH  &kp KP_ASTERISK
+                                  &trans        &trans          &trans       &trans    &trans  &trans        &trans       &kp KP_EQUAL
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
